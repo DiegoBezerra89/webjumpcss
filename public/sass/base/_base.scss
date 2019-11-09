@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+    overflow-x: hidden;
+}
+
+img {
+    width: 99%;
+    height: 100%;
+    border: 1px solid $color-secondary-light;
+    border-radius: .3rem;
+}

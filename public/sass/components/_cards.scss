@@ -1,0 +1,27 @@
+.card {
+    width: 22%;
+    &:not(:first-child) {
+        margin-left: .666666%;
+    }
+    padding: 0;
+    text-align: center;
+    
+    &__image {
+        display: block;
+        width: 100%;
+        height: 21.5rem;        
+    }
+
+    &__text {
+        &--name {
+            color: $color-secondary;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        padding: 1rem;
+        background-color: $color-green-title;
+        color: $color-white;
+    }
+}

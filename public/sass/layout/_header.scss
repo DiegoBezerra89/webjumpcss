@@ -1,0 +1,56 @@
+.header {
+    display: block;
+
+    &__login {
+        padding: 0 15vw;
+        background-color: $color-black;
+    }
+
+    &__box {
+        padding: 2rem 0;
+        position: relative;
+
+        &--logo {
+            width: 18rem;
+            display: inline-block;
+            height: auto;
+        }
+        
+        &--search {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            padding-top: 1.8rem; 
+        }
+
+        &--input {
+            width: 30rem;
+            float: left;
+            padding: .5rem;
+        }
+
+        &--button {
+            float: left;
+            padding: .5rem;
+        }
+    }
+
+    &__nav {
+        background-color: $color-primary;
+        display: block;
+        width: 100vw;
+        margin-left: -15vw;
+        padding: 1rem 0 1rem 15vw;
+
+        &--ul {
+           
+        }
+
+        &--li {
+            display: inline-block;
+            &:not(:first-child) {
+                margin-left: 5rem;
+            }
+        }
+    }
+}

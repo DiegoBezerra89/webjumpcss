@@ -1,0 +1,38 @@
+{
+  "name": "assessment-frontend",
+  "version": "1.0.0",
+  "description": "Criamos este teste para avaliar seus conhecimentos e habilidades frontend (HTML, CSS e JavaScript).",
+  "main": "app.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "axios": "^0.19.0",
+    "babel-polyfill": "^6.26.0",
+    "connect": "~3.6.6",
+    "serve-static": "~1.13.2"
+  },
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "node app.js",
+    "compile:sass": "node-sass public/sass/main.scss dist/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/webjump/assessment-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/webjump/assessment-frontend#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

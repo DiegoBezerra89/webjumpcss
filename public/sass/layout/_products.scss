@@ -1,0 +1,13 @@
+.section-products {
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.products {
+    
+    &__cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
