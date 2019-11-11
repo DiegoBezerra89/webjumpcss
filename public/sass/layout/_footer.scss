@@ -5,6 +5,6 @@
     display: block;
 
     @include respond(phone) {
-        margin-top: 2000px;
+        margin-top: 50rem;
     }
 }

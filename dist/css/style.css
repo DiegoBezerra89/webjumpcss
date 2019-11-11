@@ -149,6 +149,9 @@ body {
     border: 1px solid #d3d3d3;
     width: 20rem;
     padding: 1rem; }
+    @media only screen and (max-width: 40em) {
+      .side-menu-box {
+        width: 100%; } }
     .side-menu-box__categories--ul {
       list-style-position: inside; }
     .side-menu-box__categories--li a:link,
@@ -312,7 +315,7 @@ body {
   display: block; }
   @media only screen and (max-width: 48em) {
     .footer {
-      margin-top: 2000px; } }
+      margin-top: 50rem; } }
 
 .full-container {
   width: 70vw;
