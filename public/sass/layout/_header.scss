@@ -1,19 +1,37 @@
 .header {
     display: block;
+    position: relative;
 
     &__login {
-        padding: 0 15vw;
+        padding-right: 15vw;
         background-color: $color-black;
+        display: inline-block;
+        width: 100%;
+
+        @include respond(tab) {
+            padding: 0 2rem 0 0;
+        }
+        @include respond(little) {
+            text-align: center;
+            padding: 0;
+            width:100vw;
+        }
+
     }
 
     &__box {
         padding: 2rem 0;
         position: relative;
+        @include respond (little) {
+            text-align: center;   
+        }
 
         &--logo {
             width: 18rem;
             display: inline-block;
             height: auto;
+            
+            
         }
         
         &--search {
@@ -21,12 +39,20 @@
             position: absolute;
             right: 0;
             padding-top: 1.8rem; 
+
+            @include respond(intermediate) {
+                display: none;
+                margin-right: 3rem;
+            }
         }
 
         &--input {
             width: 30rem;
             float: left;
             padding: .5rem;
+            @include respond(little) {
+                width: 15rem; 
+            }
         }
 
         &--button {
@@ -43,14 +69,31 @@
         padding: 1rem 0 1rem 15vw;
 
         &--ul {
-           
+            @include respond(intermediate) {
+                text-align: center;
+            }
         }
 
         &--li {
             display: inline-block;
-            &:not(:first-child) {
-                margin-left: 5rem;
+            margin-right: 5rem;
+            // &:not(:first-child) {
+            //     margin-left: 5rem;
+            // }
+            @include respond(intermediate) {
+               display: block; 
+               margin-right: 0;
             }
+        }
+
+        @include respond(tab) {
+            margin-left: -1rem;
+            text-align: left;
+            padding-left: 1rem;
+        }
+
+        @include respond(intermediate) {
+            display: none;
         }
     }
 }

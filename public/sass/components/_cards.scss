@@ -1,10 +1,6 @@
 .card {
-    width: 22%;
-    &:not(:first-child) {
-        margin-left: .666666%;
-    }
-    padding: 0;
     text-align: center;
+    display: block;
     
     &__image {
         display: block;
@@ -15,6 +11,7 @@
     &__text {
         &--name {
             color: $color-secondary;
+            height: 5rem;
         }
     }
 

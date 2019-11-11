@@ -1,3 +1,9 @@
+/*
+MEDIA QUERIES
+320 - 768:    phone;
+768 - 1024:   tab;
+1024 - 1440 :    desktop;
+*/
 *,
 *::before,
 *::after {
@@ -72,6 +78,10 @@ body {
 .side-menu__header--type {
   color: #CC0D1F; }
 
+.card__text--name {
+  font-size: 1.5rem;
+  display: inline-block; }
+
 .u-margin-top {
   margin-top: 2rem; }
 
@@ -80,6 +90,9 @@ body {
 
 .u-margin-top-big {
   margin-top: 5rem; }
+
+.u-margin-bottom {
+  margin-bottom: 2rem; }
 
 .header__box--button {
   background-color: #CC0D1F;
@@ -100,21 +113,30 @@ body {
   .card__button:hover {
     background-color: #81BDB9; }
 
-.button__menu {
+.button__menu--hamburguer {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
   display: none; }
+  @media only screen and (max-width: 40em) {
+    .button__menu--hamburguer {
+      display: inline-block; } }
+
+.button__menu--lupa {
+  position: absolute;
+  top: 4rem;
+  right: 2rem; }
 
 .card {
-  width: 22%;
-  padding: 0;
-  text-align: center; }
-  .card:not(:first-child) {
-    margin-left: .666666%; }
+  text-align: center;
+  display: block; }
   .card__image {
     display: block;
     width: 100%;
     height: 21.5rem; }
   .card__text--name {
-    color: #7c7c7c; }
+    color: #7c7c7c;
+    height: 5rem; }
   .card__button {
     width: 100%;
     padding: 1rem;
@@ -175,13 +197,27 @@ body {
   border: none; }
 
 .header {
-  display: block; }
+  display: block;
+  position: relative; }
   .header__login {
-    padding: 0 15vw;
-    background-color: #000; }
+    padding-right: 15vw;
+    background-color: #000;
+    display: inline-block;
+    width: 100%; }
+    @media only screen and (max-width: 64em) {
+      .header__login {
+        padding: 0 2rem 0 0; } }
+    @media only screen and (max-width: 40em) {
+      .header__login {
+        text-align: center;
+        padding: 0;
+        width: 100vw; } }
   .header__box {
     padding: 2rem 0;
     position: relative; }
+    @media only screen and (max-width: 40em) {
+      .header__box {
+        text-align: center; } }
     .header__box--logo {
       width: 18rem;
       display: inline-block;
@@ -191,10 +227,17 @@ body {
       position: absolute;
       right: 0;
       padding-top: 1.8rem; }
+      @media only screen and (max-width: 40em) {
+        .header__box--search {
+          display: none;
+          margin-right: 3rem; } }
     .header__box--input {
       width: 30rem;
       float: left;
       padding: .5rem; }
+      @media only screen and (max-width: 40em) {
+        .header__box--input {
+          width: 15rem; } }
     .header__box--button {
       float: left;
       padding: .5rem; }
@@ -204,28 +247,77 @@ body {
     width: 100vw;
     margin-left: -15vw;
     padding: 1rem 0 1rem 15vw; }
+    @media only screen and (max-width: 40em) {
+      .header__nav--ul {
+        text-align: center; } }
     .header__nav--li {
-      display: inline-block; }
-      .header__nav--li:not(:first-child) {
-        margin-left: 5rem; }
+      display: inline-block;
+      margin-right: 5rem; }
+      @media only screen and (max-width: 40em) {
+        .header__nav--li {
+          display: block;
+          margin-right: 0; } }
+    @media only screen and (max-width: 64em) {
+      .header__nav {
+        margin-left: -1rem;
+        text-align: left;
+        padding-left: 1rem; } }
+    @media only screen and (max-width: 40em) {
+      .header__nav {
+        display: none; } }
+
+.products__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22%, auto));
+  grid-gap: 1.33333%; }
+  @media only screen and (max-width: 48em) {
+    .products__cards {
+      grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+      grid-gap: 1.33333%; } }
 
 .main-content {
+  width: 100%;
   display: flex; }
+  @media only screen and (max-width: 40em) {
+    .main-content {
+      display: block; } }
 
 .section-products {
   width: 100%;
   margin-left: 2rem; }
-
-.products__cards {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap; }
+  .section-products__order {
+    border: 1px solid #d3d3d3;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 1rem 0; }
+    .section-products__order--display {
+      display: inline-block; }
+    .section-products__order--option {
+      display: inline-block;
+      position: absolute;
+      right: 0; }
+    .section-products__order--title {
+      display: inline-block; }
+  @media only screen and (max-width: 40em) {
+    .section-products {
+      margin: 0 auto; } }
 
 .footer {
   width: 100%;
   height: 10rem;
-  background-color: #CC0D1F; }
+  background-color: #CC0D1F;
+  display: block; }
+  @media only screen and (max-width: 48em) {
+    .footer {
+      margin-top: 2000px; } }
 
 .full-container {
   width: 70vw;
   margin: 0 auto; }
+  @media only screen and (max-width: 64em) {
+    .full-container {
+      width: 100vw;
+      padding: 1rem; } }

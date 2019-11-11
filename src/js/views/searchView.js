@@ -69,7 +69,7 @@ const renderItem = item => {
             </figure>
             <div class="card__text">
                 <h4 class="card__text--name">${name}</h4>
-                <p class="card__text--price u-margin-top big-title">R$ ${price}</p>
+                <p class="card__text--price big-title">R$ ${price}</p>
             </div>
             <button class="card__button">Comprar</button>
         </div>
