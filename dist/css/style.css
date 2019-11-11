@@ -145,6 +145,8 @@ body {
 
 .side-menu {
   display: inline-block; }
+  .side-menu__header {
+    font-size: 1.6rem; }
   .side-menu-box {
     border: 1px solid #d3d3d3;
     width: 20rem;
