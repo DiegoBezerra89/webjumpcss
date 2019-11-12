@@ -35,8 +35,8 @@ export const getInput = () => {
             case 'boot' :
             case 'boots' :
             case '3':
-                elements.pageName.innerHTML = 'Tênis/Sapatos';
-                elements.typeName.innerHTML = 'Tênis/Sapatos';
+                elements.pageName.innerHTML = 'Tênis';
+                elements.typeName.innerHTML = 'Tênis';
                 idType = 3;
             break;
             default:

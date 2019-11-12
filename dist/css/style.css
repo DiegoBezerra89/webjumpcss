@@ -248,7 +248,7 @@ body {
       padding: .5rem; }
   .header__nav {
     background-color: #CC0D1F;
-    display: block;
+    display: inline-block;
     width: 100vw;
     margin-left: -15vw;
     padding: 1rem 0 1rem 15vw; }
